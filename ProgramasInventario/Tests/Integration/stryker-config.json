@@ -1,0 +1,24 @@
+{
+  "stryker-config": {
+    "ignore-methods": [
+      "DeleteMany",
+      "DeleteOne",
+      "ExistsBy",
+      "*Exception.ctor",
+      "InsertMany",
+      "InsertOne",
+      "ListManyBy",
+      "Log*",
+      "ProjectManyBy",
+      "ProjectOneBy",
+      "SelectManyBy",
+      "SelectOneBy",
+      "UpdateMany",
+      "UpdateOne"
+    ],
+    "mutate": [
+      "!DependencyInjection.cs"
+    ],
+    "mutation-level": "Complete"
+  }
+}

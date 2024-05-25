@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Presentation</name>
+    </assembly>
+    <members>
+        <member name="T:Presentation.Contracts.Models.ListModel`1">
+            <summary>
+            The list properties.
+            </summary>
+            <typeparam name="T">Desired entity type.</typeparam>
+        </member>
+        <member name="P:Presentation.Contracts.Models.ListModel`1.Data">
+            <summary>
+            List data.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Models.ListModel`1.CurrentPage">
+            <summary>
+            Current page.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Models.ListModel`1.TotalItems">
+            <summary>
+            Total items.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Models.ListModel`1.TotalPages">
+            <summary>
+            Total pages.
+            </summary>
+        </member>
+        <member name="T:Presentation.Contracts.Models.PageModel">
+            <summary>
+            The page properties.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Models.PageModel.OrderBy">
+            <summary>
+            Page order.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Models.PageModel.Page">
+            <summary>
+            Page number.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Models.PageModel.Size">
+            <summary>
+            Total page items.
+            </summary>
+        </member>
+        <member name="T:Presentation.Contracts.Models.Users.UserModel">
+            <summary>
+            The user details.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Models.Users.UserModel.Email">
+            <summary>
+            Email.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Models.Users.UserModel.Id">
+            <summary>
+            ID.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Models.Users.UserModel.CreatedAt">
+            <summary>
+            Date of creation. 
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Models.Users.UserModel.CreatedBy">
+            <summary>
+            Author of creation.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Models.Users.UserModel.LastUpdatedAt">
+            <summary>
+            Date of last update.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Models.Users.UserModel.LastUpdatedBy">
+            <summary>
+            Author of last update.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Models.Users.UserModel.Active">
+            <summary>
+            Status.
+            </summary>
+        </member>
+        <member name="T:Presentation.Contracts.Requests.Users.AuthenticateUserRequest">
+            <summary>
+            Authenticate user request.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.AuthenticateUserRequest.Email">
+            <summary>
+            Valid formatted email.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.AuthenticateUserRequest.Password">
+            <summary>
+            Valid formatted password.
+            At least one lower case letter, one upper case letter and one number.
+            Must have between 8 and 16 characters.
+            </summary>
+        </member>
+        <member name="T:Presentation.Contracts.Requests.Users.InactivateUserRequest">
+            <summary>
+            Inactivate user request.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.InactivateUserRequest.Email">
+            <summary>
+            Valid formatted email.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.InactivateUserRequest.Password">
+            <summary>
+            Valid formatted password.
+            At least one lower case letter, one upper case letter and one number.
+            Must have between 8 and 16 characters.
+            </summary>
+        </member>
+        <member name="T:Presentation.Contracts.Requests.Users.ListingUsersRequest">
+            <summary>
+            Listing users request.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.ListingUsersRequest.Email">
+            <summary>
+            Filter by Email.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.ListingUsersRequest.Id">
+            <summary>
+            Filter by ID.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.ListingUsersRequest.CreatedAt">
+            <summary>
+            Filter by date of creation.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.ListingUsersRequest.CreatedBy">
+            <summary>
+            Filter by author of creation.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.ListingUsersRequest.LastUpdatedAt">
+            <summary>
+            Filter by date of last update.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.ListingUsersRequest.LastUpdatedBy">
+            <summary>
+            Filter by author of last update.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.ListingUsersRequest.Active">
+            <summary>
+            Filter by active.
+            </summary>
+        </member>
+        <member name="T:Presentation.Contracts.Requests.Users.RegisterUserRequest">
+            <summary>
+            Register user request.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.RegisterUserRequest.Email">
+            <summary>
+            Valid formatted email.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.RegisterUserRequest.Password">
+            <summary>
+            Valid formatted password.
+            At least one lower case letter, one upper case letter and one number.
+            Must have between 8 and 16 characters.
+            </summary>
+        </member>
+        <member name="T:Presentation.Contracts.Requests.Users.UpdateUserPasswordRequest">
+            <summary>
+            Update user password request.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.UpdateUserPasswordRequest.Email">
+            <summary>
+            Valid formatted email.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.UpdateUserPasswordRequest.OldPassword">
+            <summary>
+            Valid formatted password.
+            At least one lower case letter, one upper case letter and one number.
+            Must have between 8 and 16 characters.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Requests.Users.UpdateUserPasswordRequest.NewPassword">
+            <summary>
+            Valid formatted password.
+            At least one lower case letter, one upper case letter and one number.
+            Must have between 8 and 16 characters.
+            Must be different than old password.
+            </summary>
+        </member>
+        <member name="T:Presentation.Contracts.Responses.Users.ListedUsersResponse">
+            <summary>
+            Listed users response.
+            </summary>
+        </member>
+        <member name="T:Presentation.Contracts.Responses.Users.UserAuthorizationResponse">
+            <summary>
+            User authorization response.
+            </summary>
+        </member>
+        <member name="P:Presentation.Contracts.Responses.Users.UserAuthorizationResponse.Token">
+            <summary>
+            JWT authorization header using the bearer scheme.
+            </summary>
+        </member>
+        <member name="T:Presentation.Controllers.BaseController">
+            <response code="401">Unauthorized access.</response>
+            <response code="500">An internal server error has occurred.</response>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.Authenticate(Presentation.Contracts.Requests.Users.AuthenticateUserRequest)">
+            <summary>
+            Authenticate the user by providing its email and password.
+            </summary>
+            <response code="200">Returns the token.</response>
+            <response code="400">The request was unsuccessful, see details.</response>
+            <response code="404">User not found.</response>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.Inactivate(Presentation.Contracts.Requests.Users.InactivateUserRequest)">
+            <summary>
+            Inactivate the user by providing its email and password.
+            </summary>
+            <response code="200">User inactivated.</response>
+            <response code="400">The request was unsuccessful, see details.</response>
+            <response code="404">User not found.</response>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.List(Presentation.Contracts.Requests.Users.ListingUsersRequest)">
+            <summary>
+            List the users by providing its filters.
+            </summary>
+            <response code="200">Users listed.</response>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.Register(Presentation.Contracts.Requests.Users.RegisterUserRequest)">
+            <summary>
+            Register the user by providing its email and password.
+            </summary>
+            <response code="200">User registered.</response>
+            <response code="400">The request was unsuccessful, see details.</response>
+            <response code="409">User already registered.</response>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.UpdatePassword(Presentation.Contracts.Requests.Users.UpdateUserPasswordRequest)">
+            <summary>
+            Update the user's password by providing its email, old and new passwords.
+            </summary>
+            <response code="200">User's password updated.</response>
+            <response code="400">The request was unsuccessful, see details.</response>
+            <response code="404">User not found.</response>
+        </member>
+    </members>
+</doc>

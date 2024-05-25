@@ -1,0 +1,13 @@
+{
+  "stryker-config": {
+    "ignore-methods": [
+      "*Exception.ctor",
+      "Log*"
+    ],
+    "mutate": [
+      "!DependencyInjection.cs",
+      "!GlobalConfigurations.cs"
+    ],
+    "mutation-level": "Complete"
+  }
+}

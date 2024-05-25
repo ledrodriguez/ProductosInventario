@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label, input, button {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Administración del producto</h1>
+
+    <h2>Agregar producto</h2>
+    <form id="product-in-form">
+        <label for="product-id-in">Product ID:</label>
+        <input type="text" id="product-id-in" name="product-id-in" required>
+        <label for="product-quantity-in">Quantity:</label>
+        <input type="number" id="product-quantity-in" name="product-quantity-in" required>
+        <button type="submit">Register In</button>
+    </form>
+
+    <h2>Registrar salida</h2>
+    <form id="product-out-form">
+        <label for="product-id-out">Product ID:</label>
+        <input type="text" id="product-id-out" name="product-id-out" required>
+        <label for="product-quantity-out">Quantity:</label>
+        <input type="number" id="product-quantity-out" name="product-quantity-out" required>
+        <button type="submit">Register Out</button>
+    </form>
+
+    <h2>Buscar Producto</h2>
+    <form id="product-check-form">
+        <label for="product-id-check">Product ID:</label>
+        <input type="text" id="product-id-check" name="product-id-check" required>
+        <button type="submit">Check Product</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
